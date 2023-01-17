@@ -42,9 +42,9 @@ function App() {
     localStorage.setItem('presupuesto', presupuesto ?? 0)
   }, [presupuesto])
 
-  // useEffect(() => {
-  //   localStorage.setItem('gastos', JSON.stringify(gastos) ?? [])
-  // }, [gastos])
+  useEffect(() => {
+    localStorage.setItem('gastos', JSON.stringify(gastos) ?? [])
+  }, [gastos])
 
   // useEffect(() => {
   //   if(filtro) {
